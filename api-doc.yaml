@@ -47,7 +47,7 @@ paths:
           description: "succesful"
           
  /medias/{media}/edit: 
-    post:
+    put:
       parameters:
       - name: "media"
         in: "path"
@@ -65,7 +65,7 @@ paths:
           
  
  /medias/{mediaId}/delete: 
-     get:
+     delete:
       parameters:
       - name: "mediaId"
         in: "path"
