@@ -16,7 +16,7 @@ schemes:
 - "https"
 - "http"
 paths:
- /medias/{media}:
+ /media/{media}:
     get:
      description: "Get specific post"
      parameters:
@@ -46,7 +46,7 @@ paths:
         "200":
           description: "succesful"
           
- /medias/{media}/edit: 
+ /media/{media}/put: 
     put:
       parameters:
       - name: "media"
@@ -64,7 +64,7 @@ paths:
           description: "succesful"
           
  
- /medias/{mediaId}/delete: 
+ /media/{mediaId}/delete: 
      delete:
       parameters:
       - name: "mediaId"
