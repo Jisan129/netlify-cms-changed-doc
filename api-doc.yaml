@@ -16,12 +16,12 @@ schemes:
 - "https"
 - "http"
 paths:
- /media/{media}:
+ /media/{mediaId}:
     get:
      description: "Get specific post"
      parameters:
       - in: "path"
-        name: "media"
+        name: "mediaId"
         required: true
         type: "string"
 
@@ -46,10 +46,10 @@ paths:
         "200":
           description: "succesful"
           
- /media/{media}/put: 
+ /media/{mediaId}/put: 
     put:
       parameters:
-      - name: "media"
+      - name: "mediaId"
         in: "path"
         description: "PK of post"
         required: true
